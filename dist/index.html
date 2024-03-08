@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="utf-8">
+    <title>main-page</title>
+    <meta name="description" content="main-page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="content/css/vendors.css" rel="stylesheet"><link href="content/css/app.css" rel="stylesheet"></head>
+  <body class="main-page" data-scroll-container>
+    <main>
+      <header class="header js-header js-init" data-header>
+        <div class="container">
+          <div class="header__body">
+            <div class="header__left"><a class="logo"><img src="content/images/icons/logo.svg" width="36" height="40"></a>
+              <ul class="top-menu">
+                <li><a class="js-menu-item" data-target="#first" data-duration="3">Комплекс</a></li>
+                <li><a class="js-menu-item" data-target="#second" data-duration="3">Расположение</a></li>
+                <li><a class="js-menu-item" data-target="#third" data-duration="3">Квартиры</a></li>
+                <li><a class="js-menu-item" data-target="#four" data-duration="3">Галерея</a></li>
+                <li><a class="js-menu-item" data-target="#five" data-duration="3">Ход строительства</a></li>
+                <li><a class="js-menu-item" data-target="#six" data-duration="3">Застройщик</a></li>
+                <li><a class="js-menu-item" data-target="#seven" data-duration="3">Контакты</a></li>
+              </ul><a class="link link--middle link--dark" href="tel: +99999999999">
+                <div class="link__text">9999999999</div></a>
+              <button class="burger">
+                <div class="burger__title">Меню</div>
+                <div class="burger__icon"><img src="content/images/icons/burger.svg" width="18" height="7" alt=""></div>
+              </button>
+            </div>
+            <div class="top-info"><a class="link link--middle link--white" href="tel: +99999999999">
+                <div class="link__text">9999999999</div></a>
+              <button class="button button--default button--default-transparent js-open-modal" data-id="#consult">
+                <div class="button__text">Выбрать квартиру</div>
+                <div class="button__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="button button--default button--default-orange js-open-modal" data-id="#consult">
+                <div class="button__text">Консультация</div>
+                <div class="button__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="fixed-menu" data-lenis-prevent>
+        <div class="container">
+          <div class="fixed-menu__top"><a class="logo"><img src="content/images/icons/logo.svg" width="36" height="40"></a><a class="link link--middle link--dark" href="tel: +99999999999">
+              <div class="link__text">9999999999</div></a>
+            <div class="close-menu js-close-menu"><img src="content/images/icons/close.svg" width="28" height="28" alt=""></div>
+          </div>
+          <div class="fixed-menu__body">
+            <div class="fixed-menu__body-mid" data-lenis-prevent>
+              <ul class="fixed-menu__list">
+                <li><a class="js-menu-item" data-target="#first" data-duration="3"><span>Комплекс</span></a></li>
+                <li><a class="js-menu-item" data-target="#second" data-duration="3"><span>Расположение</span></a></li>
+                <li><a class="js-menu-item" data-target="#third" data-duration="3"><span>Квартиры</span></a></li>
+                <li><a class="js-menu-item" data-target="#four" data-duration="3"><span>Галерея</span></a></li>
+                <li><a class="js-menu-item" data-target="#five" data-duration="3"><span>Ход строительства</span></a></li>
+                <li><a class="js-menu-item" data-target="#six" data-duration="3"><span>Застройщик</span></a></li>
+                <li><a class="js-menu-item" data-target="#seven" data-duration="3"><span>Контакты</span></a></li>
+              </ul>
+              <button class="button button--default button--default-orange js-open-modal" data-id="#consult">
+                <div class="button__text">Консультация</div>
+                <div class="button__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section section--top">
+        <div class="container">
+          <div class="top-block">
+            <div class="top-block__btns">
+              <button class="button button--default button--default-transparent thefloors-custom-widget-link">
+                <div class="button__text">Выбрать квартиру</div>
+                <div class="button__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="button button--default button--default-orange js-open-modal" data-id="#consult">
+                <div class="button__text">Консультация</div>
+                <div class="button__icon">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="top-block__left">
+              <div class="top-point">
+                <h2 class="title title--def title--bg-orange title--ttu title--white">жк Test</h2>
+                <div class="point-block">
+                  <div class="point-block__icon"><img src="content/images/icons/point.svg" width="16" height="20" alt=""></div>
+                  <div class="point-block__text">Adress, возле микрорайона <strong>Adtess</strong></div>
+                </div>
+              </div>
+              <h2 class="title title--def title--ttu title--dark">Простор внутри<span>и красота снаружи</span></h2>
+              <div class="top-block__mid">
+                <div class="long-arr long-arr--long">
+                  <picture>
+                    <source media="(min-width: 640px)" srcset="content/images/icons/long-arrow.svg"><img src="content/images/icons/short-arr.svg" width="846" height="829" alt="">
+                  </picture>
+                </div>
+                <div class="top-block__board">СОВРЕМЕННЫЙ ЖИЛОЙ  КОМПЛЕКС В ПЕТРОПАВЛОВСКЕ</div>
+              </div>
+              <div class="top-block__bottom">
+                <button class="button button--circle vertical" style="pointer-events: none;">
+                  <div class="button__body">
+                    <svg width="24" height="30" viewBox="0 0 24 30" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3536 17.3105C23.1583 17.1152 22.8417 17.1152 22.6464 17.3105L12.5 27.4569L12.5 1.16402C12.5 0.887882 12.2761 0.664024 12 0.664024C11.7239 0.664024 11.5 0.887882 11.5 1.16402L11.5 27.4569L1.35355 17.3105C1.15829 17.1152 0.84171 17.1152 0.646447 17.3105C0.451186 17.5057 0.451186 17.8223 0.646447 18.0176L11.6464 29.0176L12.3536 29.0176L23.3536 18.0176C23.5488 17.8223 23.5488 17.5057 23.3536 17.3105Z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <div class="top-block__board-two">
+                  <div class="title title--dark title--mid title--ttu title--light">рассрочка</div>
+                  <div class="simple-text simple-text--middle simple-text--dark">от застройщика</div>
+                </div>
+              </div>
+            </div>
+            <div class="top-block__img">
+              <div class="pic-board">
+                <ul>
+                  <li>СВОБОДНАЯ ПЛАНИРОВКА</li>
+                  <li>ПЛОЩАДЬ КВАРТИР  ОТ 42 ДО 140М2</li>
+                  <li>РАССРОЧКА ОТ ЗАСТРОЙЩИКА</li>
+                </ul>
+              </div>
+              <picture>
+                <source media="(min-width: 640px)" srcset="content/images/pics/top-img.jpg"><img src="content/images/pics/top-img.jpg" width="846" height="829" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--complex" id="first">
+        <div class="container">
+          <div class="complex-block">
+            <div class="complex-block__top">
+              <div class="complex-block__title">
+                <h2 class="title title--def title--ttu title--dark">О комплексе</h2>
+                <div class="long-arr long-arr--short">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="content/images/icons/arrow-middle.svg"><img src="content/images/icons/arrow-middle.svg" width="846" height="829" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="complex-block__board">
+                <div class="complex-block__board-item"><span>220</span><span>Квартир</span></div>
+                <div class="complex-block__board-item"><span>6</span><span>Секций</span></div>
+                <div class="complex-block__board-item"><span>3</span><span>Дома</span></div>
+                <div class="complex-block__board-item"><span>5</span><span>Этажей</span></div>
+              </div>
+            </div>
+            <div class="complex-block__bottom">
+              <div class="complex-block__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic13.jpg"></picture>
+              </div>
+              <div class="single-image single-image--long"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img8.jpg" width="398" height="120"></div>
+              <div class="complex-block__text">
+                <div class="simple-text simple-text--mid simple-text--dark">Современный жилой комплекс, расположенный в городе Петропавловск, который сочетает в себе комфорт и красоту природы. Комплекс находится в всего в нескольких минутах езды  от крупного торгового центра и городской  инфраструктуры, обеспечивая своим  жителям удобство и доступность.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--form-wrap">
+        <div class="container">
+          <div class="form-wrap">
+            <div class="form-wrap__title">ПОСЕЩЕНИЕ<br>СТРОИТЕЛЬНОЙ  ПЛОЩАДКИ</div>
+            <div class="form-wrap__right">
+              <div class="form-orange">
+                <div class="form-orange__left">
+                  <h2 class="title title--def title--ttu title--white title--light">Записаться<span>на просмотр</span></h2>
+                  <div class="simple-text simple-text--middle simple-text--white">Заполните форму и мы перезвоним вам.</div>
+                </div>
+                <form class="form-block">
+                  <div class="form-block__input-wrap">
+                    <input class="form-block__input" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                  </div>
+                  <div class="form-block__input-wrap">
+                    <input class="form-block__input js-phone-number" type="tel" name="phone" placeholder="+7" autocomplete="off" required>
+                  </div>
+                  <button class="button button--default-sec button--default-white">
+                    <div class="button__text">Оставить заявку</div>
+                    <div class="button__icon">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--map" id="second">
+        <div class="map-block">
+          <div class="map-block__top">
+            <h2 class="title title--def title--ttu title--dark">
+              <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div><span>Расположение</span>
+            </h2>
+          </div>
+          <div class="map-item map-item--reverse">
+            <div class="map-item__icon" style="background-image: url('content/images/icons/bgcircle.svg')"><img src="content/images/icons/mapicon1.svg" width="30" height="22" alt=""></div>
+            <div class="map-item__text">Test name</div>
+          </div>
+          <div class="map-item">
+            <div class="map-item__icon" style="background-image: url('content/images/icons/bgcircle.svg')"><img src="content/images/icons/mapicon1.svg" width="30" height="22" alt=""></div>
+            <div class="map-item__text">Test name</div>
+          </div>
+          <div class="map-item">
+            <div class="map-item__icon" style="background-image: url('content/images/icons/bgcircle.svg')"><img src="content/images/icons/mapicon2.svg" width="30" height="22" alt=""></div>
+            <div class="map-item__text">Test name</div>
+          </div>
+          <div class="map-item">
+            <div class="map-item__icon" style="background-image: url('content/images/icons/bgcircle.svg')"><img src="content/images/icons/mapicon1.svg" width="30" height="22" alt=""></div>
+            <div class="map-item__text">Test name</div>
+          </div>
+          <div class="map-item">
+            <div class="map-item__icon" style="background-image: url('content/images/icons/bgcircle.svg')"><img src="content/images/icons/mapicon3.svg" width="30" height="22" alt=""></div>
+            <div class="map-item__text">Test name</div>
+          </div>
+          <div class="map-block__img">
+            <picture>
+              <source class="lazy" media="(min-width: 640px)" srcset="content/images/empty.gif" data-srcset="content/images/pics/map.png"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/map-mob.svg" width="846" height="829" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section section--pic-items section--dark">
+        <div class="container">
+          <div class="pic-items">
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic9.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">Благоустройство</div>
+                  <div class="simple-text simple-text--default simple-text--white">Благоустройство ЖК  – это одно из главных преимуществ комплекса. Здесь есть все необходимое для комфортного и удобного проживания, включая зеленые насаждения, детские и спортивные площадки, а также пешеходную зону и променад</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img2.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic2.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">Зеленые насаждения</div>
+                  <div class="simple-text simple-text--default simple-text--white"> Одним из главных преимуществ ЖК  является его расположение. Комплекс находится в лесном массиве, что обеспечивает свежий воздух и живописные пейзажи, а также находится всего в нескольких минутах езды от крупного торгового центра и городской инфраструктуры,  обеспечивая жильцам удобство и доступность.</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img3.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic10.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">Детские площадки</div>
+                  <div class="simple-text simple-text--default simple-text--white"> Детские и спортивные площадки в ЖК  - это места, где дети и взрослые могут проводить свободное время, заниматься спортом и развиваться. Здесь есть все необходимое для игр и занятий, включая качели, горки, футбольное поле и многое другое.</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img4.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic4.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">Променад</div>
+                  <div class="simple-text simple-text--default simple-text--white">Пешеходная зона и променад - это места, где жильцы могут прогуливаться, наслаждаться красотой природы и общаться с соседями. Это также место, где можно проводить время на свежем воздухе и зарядиться энергией на весь день.</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img5.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic11.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">зона барбекю</div>
+                  <div class="simple-text simple-text--default simple-text--white">Детские и спортивные площадки в ЖК  - это места, где дети и взрослые могут проводить свободное время, заниматься спортом и развиваться. Здесь есть все необходимое для игр и занятий, включая качели, горки, баскетбольную площадку и многое другое.</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img6.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+            <div class="pic-item">
+              <div class="pic-item__img">
+                <picture><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic12.jpg"></picture>
+              </div>
+              <div class="pic-item__body">
+                <div class="pic-item__text">
+                  <div class="title title--white title--mid title--ttu title--light">футбольное поле</div>
+                  <div class="simple-text simple-text--default simple-text--white">Пешеходная зона и променад - это места, где жильцы могут прогуливаться, наслаждаться красотой природы и общаться с соседями. Это также место, где можно проводить время на свежем воздухе и зарядиться энергией на весь день.</div>
+                </div>
+                <div class="single-image single-image--short"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/single-img7.jpg" width="398" height="120"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--materials section--dark">
+        <div class="container">
+          <div class="materials-block">
+            <div class="materials-block__top">
+              <h2 class="title title--def title--ttu title--white"><span>Материалы самого</span>
+                <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle-white.svg" width="160" height="21" alt=""></div><span>высокого качества</span>
+              </h2>
+            </div>
+            <div class="materials-block__list">
+              <div class="material-item">
+                <div class="material-item__title">
+                  <div class="title title--dark title--mid title--ttu title--light">Облицовка <br> фасада</div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Лицевая кладка выполена из облицовочного  утолщенного кирпича.</div>
+                </div>
+                <div class="material-item__body">
+                  <div class="material-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic5.jpg" width="620" height="120"></div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Лицевая кладка выполена из облицовочного  утолщенного кирпича.</div>
+                </div>
+              </div>
+              <div class="material-item">
+                <div class="material-item__title">
+                  <div class="title title--dark title--mid title--ttu title--light">СОХРАНЕНИЕ <br> ТЕПЛА</div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Толщина стены 64 см (забутовочный кирпич, утеплитель, облицовочный кирпич)</div>
+                </div>
+                <div class="material-item__body">
+                  <div class="material-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic6.jpg" width="620" height="120"></div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Толщина стены 64 см (забутовочный кирпич, утеплитель, облицовочный кирпич)</div>
+                </div>
+              </div>
+              <div class="material-item">
+                <div class="material-item__title">
+                  <div class="title title--dark title--mid title--ttu title--light">Металлопластиковые  <br> 5-камерные окна</div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Для комфорта будут установленны 5-камерные окна с 3 слойным стеклопакетом.</div>
+                </div>
+                <div class="material-item__body">
+                  <div class="material-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pic7.jpg" width="620" height="120"></div>
+                  <div class="simple-text simple-text--middle simple-text--dark">Для комфорта будут установленны 5-камерные окна с 3 слойным стеклопакетом.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--form-sec section--dark">
+        <div class="container">
+          <div class="form-wrap">
+            <div class="form-wrap__title">КОНСУЛЬТАЦИЯ</div>
+            <div class="form-wrap__right">
+              <div class="form-orange">
+                <div class="form-orange__left">
+                  <h2 class="title title--def title--ttu title--white title--light">Получить<span>консультацию</span></h2>
+                  <div class="simple-text simple-text--middle simple-text--white">Заполните форму и мы перезвоним вам.</div>
+                </div>
+                <form class="form-block">
+                  <div class="form-block__input-wrap">
+                    <input class="form-block__input" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                  </div>
+                  <div class="form-block__input-wrap">
+                    <input class="form-block__input js-phone-number" type="tel" name="phone" placeholder="+7" autocomplete="off" required>
+                  </div>
+                  <button class="button button--default-sec button--default-white">
+                    <div class="button__text">Оставить заявку</div>
+                    <div class="button__icon">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--desigions" id="third">
+        <div class="container">
+          <div class="desigions-block">
+            <div class="desigions-block__top">
+              <h2 class="title title--def title--ttu title--dark"><span>Широкий выбор  </span>
+                <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div><span>планировочных решений
+                  <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div></span>
+              </h2>
+            </div>
+            <div class="desigions-block__body">
+              <div class="desigions-block__left">
+                <div class="simple-text simple-text--mid simple-text--dark">Преимуществом ЖК  является разнообразие вариантов планировок квартир, что позволяет жильцам выбрать наиболее подходящий для себя вариант жилья.</div>
+                <button class="button button--default-sec button--default-orange thefloors-custom-widget-link">
+                  <div class="button__text">Выбрать квартиру</div>
+                  <div class="button__icon">
+                    <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="desigions-block__list">
+                <div class="desigions-item">
+                  <div class="desigions-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/des1.png" width="358" height="335"></div>
+                  <div class="desigions-item__body"><span>1-ком</span><span>40 - 47 м<sup>2</sup></span></div>
+                </div>
+                <div class="desigions-item">
+                  <div class="desigions-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/des2.png" width="358" height="335"></div>
+                  <div class="desigions-item__body"><span>2-ком</span><span>49 - 59 м<sup>2</sup></span></div>
+                </div>
+                <div class="desigions-item">
+                  <div class="desigions-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/des3.png" width="288" height="335"></div>
+                  <div class="desigions-item__body"><span>3-ком</span><span>63 - 99 м<sup>2</sup></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--gallery" id="four">
+        <div class="container">
+          <div class="gallery-slider js-init" data-slider="materials">
+            <div class="gallery-slider__top">
+              <div class="gallery-slider__nav-wrap">
+                <div class="gallery-slider__counter"><span class="js-swiper-current">01</span><span class="js-swiper-total"></span></div>
+                <div class="gallery-slider__nav">
+                  <button class="button button--circle horizontal js-prev">
+                    <div class="button__body">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90043 11.8536C7.09569 11.6583 7.09569 11.3417 6.90043 11.1464L2.25401 6.5L14.7969 6.5C15.073 6.5 15.2969 6.27614 15.2969 6C15.2969 5.72386 15.073 5.5 14.7969 5.5L2.25401 5.5L6.90043 0.853599C7.09569 0.6583 7.09569 0.3417 6.90043 0.1464C6.70517 -0.0487996 6.38858 -0.0487996 6.19332 0.1464L0.693309 5.64645L0.693309 6.35355L6.19332 11.8536C6.38858 12.0488 6.70517 12.0488 6.90043 11.8536Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <button class="button button--circle horizontal js-next">
+                    <div class="button__body">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <h2 class="title title--def title--ttu title--dark">
+                <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div><span>галерея</span>
+              </h2>
+            </div>
+            <div class="gallery-slider__body">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="gallery-slider__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide1.jpg" width="1920" height="900"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery-slider__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide2.jpg" width="1920" height="900"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery-slider__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide3.jpg" width="1920" height="900"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--builder" id="five">
+        <div class="container">
+          <div class="builder-block">
+            <div class="builder-block__top">
+              <h2 class="title title--def title--ttu title--dark"><span>ХОД </span>
+                <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div><span>СТРОИТЕЛЬСТВА</span>
+              </h2>
+            </div>
+            <div class="builder-block__slider js-init" data-slider="builder">
+              <div class="builder-block__nav-wrap">
+                <div class="builder-block__counter"><span class="js-swiper-current">01</span><span class="js-swiper-total"></span></div>
+                <div class="builder-block__nav">
+                  <button class="button button--circle horizontal js-prev">
+                    <div class="button__body">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90043 11.8536C7.09569 11.6583 7.09569 11.3417 6.90043 11.1464L2.25401 6.5L14.7969 6.5C15.073 6.5 15.2969 6.27614 15.2969 6C15.2969 5.72386 15.073 5.5 14.7969 5.5L2.25401 5.5L6.90043 0.853599C7.09569 0.6583 7.09569 0.3417 6.90043 0.1464C6.70517 -0.0487996 6.38858 -0.0487996 6.19332 0.1464L0.693309 5.64645L0.693309 6.35355L6.19332 11.8536C6.38858 12.0488 6.70517 12.0488 6.90043 11.8536Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <button class="button button--circle horizontal js-next">
+                    <div class="button__body">
+                      <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="builder-item">
+                      <div class="builder-item__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide3.jpg" width="1920" height="900"></div>
+                      <div class="builder-item__body">
+                        <div class="title title--dark title--mid title--ttu title--light">24.08.2023</div>
+                        <div class="simple-text simple-text--mid simple-text--dark">Преимуществом ЖК  является разнообразие вариантов планировок квартир, что позволяет жильцам выбрать наиболее подходящий для себя вариант жилья.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="builder-item">
+                      <div class="builder-item__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide2.jpg" width="1920" height="900"></div>
+                      <div class="builder-item__body">
+                        <div class="title title--dark title--mid title--ttu title--light">30.08.2023</div>
+                        <div class="simple-text simple-text--mid simple-text--dark">Преимуществом ЖК  является разнообразие вариантов планировок квартир, что позволяет жильцам выбрать наиболее подходящий</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="builder-item">
+                      <div class="builder-item__img"><img class="swiper-lazy" src="content/images/empty.gif" data-src="content/images/pics/slide1.jpg" width="1920" height="900"></div>
+                      <div class="builder-item__body">
+                        <div class="title title--dark title--mid title--ttu title--light">11.08.2024</div>
+                        <div class="simple-text simple-text--mid simple-text--dark">Преимуществом ЖК  является разнообразие вариантов планировок квартир, что позволяет жильцам выбрать наиболее подходящий для себя вариант жилья.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--builder-two" id="six">
+        <div class="container">
+          <div class="builder-two">
+            <div class="builder-two__top">
+              <h2 class="title title--def title--ttu title--dark"><span>О ЗАСТРОЙЩИКЕ </span>
+                <div class="long-arr long-arr--short"><img src="content/images/icons/arrow-middle.svg" width="160" height="21" alt=""></div>
+              </h2>
+            </div>
+            <div class="builder-two__body">
+              <div class="builder-two__left">
+                <div class="simple-text simple-text--middle simple-text--dark">Design City – надежный застройщик, создающий современные и инновационные жилые комплексы. Наша команда опытных профессионалов в области архитектуры и строительства разрабатывает уникальные пространства высокого качества. Мы гарантируем надежность, соблюдение сроков и заботу о комфорте клиентов. Присоединяйтесь к нам и воплотите свои жилищные мечты вместе с Design City.</div>
+              </div>
+              <div class="builder-two__img">
+                <picture>
+                  <source class="lazy" media="(min-width: 768px)" srcset="content/images/empty.gif" data-srcset="content/images/pics/build.jpg"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/build-mob.jpg" width="846" height="829" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--projects">
+        <div class="container">
+          <div class="projects-block">
+            <div class="projects-block__top">
+              <h2 class="title title--mid title--ttu title--dark">ПРОЕКТы ЗАСТРОЙЩИКА</h2>
+              <div class="simple-text simple-text--middle simple-text--dark">История нашей компании началась с 1998 года. На сегодняшний день опыт нашей компании состовляет 25 лет.</div>
+            </div>
+            <div class="projects-block__slider js-init" data-slider="projects">
+              <button class="button button--circle horizontal small js-prev">
+                <div class="button__body">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.90043 11.8536C7.09569 11.6583 7.09569 11.3417 6.90043 11.1464L2.25401 6.5L14.7969 6.5C15.073 6.5 15.2969 6.27614 15.2969 6C15.2969 5.72386 15.073 5.5 14.7969 5.5L2.25401 5.5L6.90043 0.853599C7.09569 0.6583 7.09569 0.3417 6.90043 0.1464C6.70517 -0.0487996 6.38858 -0.0487996 6.19332 0.1464L0.693309 5.64645L0.693309 6.35355L6.19332 11.8536C6.38858 12.0488 6.70517 12.0488 6.90043 11.8536Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="button button--circle horizontal small js-next">
+                <div class="button__body">
+                  <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="projects-item">
+                      <div class="projects-item__title">ЖК «ЗАРА»</div>
+                      <div class="projects-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pr4.jpg" width="396" height="363"></div>
+                      <div class="projects-item__sub">2021-2022 гг. Строительство многоквартирного жилого дома ЖК</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects-item">
+                      <div class="projects-item__title">ЖК «АБУ»</div>
+                      <div class="projects-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pr5.jpg" width="396" height="363"></div>
+                      <div class="projects-item__sub">2017-2018  гг. ЖК</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects-item">
+                      <div class="projects-item__title">МЕЧЕТЬ «НАУАН ХАЗИРЕТ»</div>
+                      <div class="projects-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pr3.jpg" width="396" height="363"></div>
+                      <div class="projects-item__sub">2014-2016 гг. Design City были генеральными подрядчиками по строительству мечети</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects-item">
+                      <div class="projects-item__title">АРКА В Г . КОКШЕТАУ</div>
+                      <div class="projects-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pr2.jpg" width="396" height="363"></div>
+                      <div class="projects-item__sub">2015 г. С</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects-item">
+                      <div class="projects-item__title">АЗС «КАЗ МУНАЙ ГАЗ»</div>
+                      <div class="projects-item__img"><img class="lazy" src="content/images/empty.gif" data-src="content/images/pics/pr1.jpg" width="396" height="363"></div>
+                      <div class="projects-item__sub">1998 - 2005 гг. Строительство и реконструкция</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<div class="popups-wrapper js-popup-wrap js-init" data-modal>
+  <div class="popups-wrapper__background js-close-popup"></div>
+  <div class="popup-item" data-id="#consult">
+    <div class="close-popup js-close-popup">
+      <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" stroke="#D9D9D9"></rect>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7071 11.0001L11 23.7072L10.2928 23.0001L23 10.293L23.7071 11.0001Z"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 11.0001L23 23.7072L23.7072 23.0001L11 10.293L10.2929 11.0001Z"></path>
+      </svg>
+    </div>
+    <div class="popup-item__body">
+      <div class="popup-item__top">
+        <h2 class="title title--def title--ttu title--white"><span>Консультация</span></h2>
+      </div>
+      <form class="form-block">
+        <div class="form-block__input-wrap">
+          <input class="form-block__input" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+        </div>
+        <div class="form-block__input-wrap">
+          <input class="form-block__input js-phone-number" type="tel" name="phone" placeholder="+7" autocomplete="off" required>
+        </div>
+        <button class="button button--default-sec button--default-white">
+          <div class="button__text">Оставить заявку</div>
+          <div class="button__icon">
+            <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+            </svg>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer" id="seven">
+  <div class="container">
+    <div class="footer__body">
+      <div class="footer__left"><a class="number-link" href="tel: +9999999999">+9 999 9999999</a><a class="point-block point-block--footer" href="https://www.google.com/maps/place/54%C2%B055'56.7%22N+69%C2%B008'16.8%22E/@54.932413,69.137993,17z/data=!3m1!4b1!4m4!3m3!8m2!3d54.932413!4d69.137993?entry=ttu" target="_blank">
+          <div class="point-block__icon"><img src="content/images/icons/point-two.svg" width="16" height="20" alt=""></div>
+          <div class="point-block__text">
+            Г. ПЕТРОПАВЛОВСК
+            УЛ. ТАҢШОЛПАН, 2/3
+          </div></a>
+        <div class="soc-block"><a class="soc-item" href="https://www.instagram.com/designstroy.kz" target="_blank"><img src="content/images/icons/insta.svg" width="22" height="22" alt=""></a><a class="soc-item" href="https://www.facebook.com/designcity.kz" target="_blank"><img src="content/images/icons/face.svg" width="16" height="25" alt=""></a><a class="soc-item" href="https://api.whatsapp.com/send/?phone=77052518656&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank"><img src="content/images/icons/wts.svg" width="24" height="24" alt=""></a></div>
+      </div>
+      <ul class="footer__menu">
+        <li><a href="#">Комплекс</a></li>
+        <li><a href="#">Расположение</a></li>
+        <li><a href="#">Квартиры</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Ход строительства</a></li>
+        <li><a href="#">Застройщик</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer__form">
+        <div class="form-orange form-orange--white">
+          <div class="form-orange__left">
+            <h2 class="title title--mid title--ttu title--dark title--light">Получить консультацию</h2>
+            <div class="simple-text simple-text--middle simple-text--dark">Заполните форму и мы перезвоним вам.</div>
+          </div>
+          <form class="form-block form-block--dark">
+            <div class="form-block__input-wrap">
+              <input class="form-block__input" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+            </div>
+            <div class="form-block__input-wrap">
+              <input class="form-block__input js-phone-number" type="tel" name="phone" placeholder="+7" autocomplete="off" required>
+            </div>
+            <button class="button button--default-sec button--default-orange">
+              <div class="button__text">Оставить заявку</div>
+              <div class="button__icon">
+                <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09758 0.146447C8.90232 0.341709 8.90232 0.658291 9.09758 0.853553L13.744 5.5H1.20113C0.924992 5.5 0.701134 5.72386 0.701134 6C0.701134 6.27614 0.924992 6.5 1.20113 6.5H13.744L9.09758 11.1464C8.90232 11.3417 8.90232 11.6583 9.09758 11.8536C9.29284 12.0488 9.60943 12.0488 9.80469 11.8536L15.3047 6.35355V5.64645L9.80469 0.146447C9.60943 -0.0488155 9.29284 -0.0488155 9.09758 0.146447Z"></path>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__logo"><a class="logo logo--big"><img src="content/images/icons/logo-white.svg" width="36" height="40"></a>
+        <div class="simple-text simple-text--mid simple-text--white">
+          Политика конфиденциальности   <br>
+          &copy
+        </div>
+      </div><a class="develop" href="#" target="_blank">
+        <div class="develop__text">powered by</div>
+        <div class="develop__icon"><img src="content/images/icons/adart.svg" width="92" height="13"></div></a>
+      <div class="footer__bottom-soc"><a class="soc-item" href="https://www.instagram.com/designstroy.kz" target="_blank"><img src="content/images/icons/insta.svg" width="22" height="22" alt=""></a><a class="soc-item" href="https://www.facebook.com/designcity.kz" target="_blank"><img src="content/images/icons/face.svg" width="16" height="25" alt=""></a><a class="soc-item" href="https://api.whatsapp.com/send/?phone=77052518656&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank"><img src="content/images/icons/wts.svg" width="24" height="24" alt=""></a>
+        <button class="button button--default-sec button--default-orange js-to-top">
+          <div class="button__text">Вверх</div>
+          <div class="button__icon">
+            <svg width="12" height="15" viewBox="0 0 12 15" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 6.40535C0.341709 6.60061 0.658292 6.60061 0.853554 6.40535L5.5 1.7589L5.5 14.3018C5.5 14.5779 5.72386 14.8018 6 14.8018C6.27614 14.8018 6.5 14.5779 6.5 14.3018L6.5 1.7589L11.1464 6.40535C11.3417 6.60061 11.6583 6.60061 11.8536 6.40535C12.0488 6.21009 12.0488 5.8935 11.8536 5.69824L6.35355 0.198242L5.64645 0.198242L0.146447 5.69824C-0.0488153 5.8935 -0.0488153 6.21009 0.146447 6.40535Z"></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="scripts//vendors.js"></script><script type="text/javascript" src="scripts//app.js"></script></body>
+</html>
